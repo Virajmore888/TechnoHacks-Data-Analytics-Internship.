@@ -1,4 +1,4 @@
-# Task 01: Exploring Data Insights 
+## Task 01: Exploring Data Insights 
 
 ![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
@@ -16,10 +16,10 @@ The primary objective of this project was to implement a robust Data Cleaning an
 
 ## 📸 Technical Documentation & Evidence
 ### Data Analysis Interface
-![Data Analysis Interface](Task-01-Exploring-Data-Insights/IMG_0199.JPG)
+![Data Analysis Interface](IMG_0199.JPG)
 
 ### Cleaned Data Structure
-![Cleaned Data Structure](Task-01-Exploring-Data-Insights/IMG_0198.JPG)
+![Cleaned Data Structure](IMG_0198.JPG)
 
 ## 🎥 Video Demonstration
 * **[Strategic Walkthrough on LinkedIn](https://www.linkedin.com/posts/viraj-more-a24a80391_technohacks-dataanalytics-industry4-ugcPost-7409454888453279744-YHHJ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAGBx1bwBTHGt8EcrWtMOC6HHwclHdoFx_b0&utm_campaign=copy_link)** 🚀
@@ -30,4 +30,4 @@ The primary objective of this project was to implement a robust Data Cleaning an
 
 ---
 **Thank you for your professional evaluation.**
-*Analyst: More Viraj Uttam| TechnoHacks IT Solutions*
+*Analyst: More Viraj Uttam | TechnoHacks IT Solutions*
