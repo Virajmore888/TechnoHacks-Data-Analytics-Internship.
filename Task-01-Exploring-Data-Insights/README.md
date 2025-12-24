@@ -30,4 +30,4 @@ The primary objective of this project was to implement a robust Data Cleaning an
 
 ---
 **Thank you for your professional evaluation.**
-*Analyst: More Viraj Uttam | TechnoHacks IT Solutions*
+*Analyst: More Viraj Uttam| TechnoHacks IT Solutions*
