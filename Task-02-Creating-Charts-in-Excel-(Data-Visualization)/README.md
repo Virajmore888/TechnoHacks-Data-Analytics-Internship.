@@ -16,6 +16,7 @@ In this phase, I translated complex quantitative findings into high-impact visua
 
 ## 📸 Visual Documentation
 ![Interactive Sales Dashboard](IMG_0203.JPG)
+
 ![Granular Trend Analysis](IMG_0202.JPG)
 
 ## 🎥 Visualization Walkthrough
