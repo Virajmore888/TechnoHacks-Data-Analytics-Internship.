@@ -35,7 +35,7 @@ This repository serves as the strategic culmination and **Final Capstone Task** 
 ### 🚀 Task 03: Final Portfolio Consolidation (Capstone)
 * **Strategic Focus:** Synthesizing all technical deliverables into a professional career-ready identity.
 * **💻 GitHub Repository:** [View Portfolio Repo](https://github.com/Virajmore888/TechnoHacks-Data-Analytics-Internship./tree/main/Task-03-Preparing-a-Data-Analytics-Portfolio)
-* **🎥 LinkedIn Video:** [Watch Final Task 3 Presentation](( ))
+* **🎥 LinkedIn Video:** [Watch Final Task 3 Presentation](https://www.linkedin.com/posts/viraj-more-a24a80391_technohacks-dataanalytics-portfolio-activity-7415622526736842752-KXlX?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAGBx1bwBTHGt8EcrWtMOC6HHwclHdoFx_b0&utm_campaign=copy_link)
 * **Deliverables:** [📁 Master Resource Repository (Google Drive)](https://drive.google.com/drive/folders/1nV0sk0kZyr9u7sN-yAtyQWUnbcGE2dYo)
 
 ---
