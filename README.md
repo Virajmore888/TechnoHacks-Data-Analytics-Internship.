@@ -1,91 +1,73 @@
-# 🏭 Industrial Data Analytics & Predictive Maintenance
-**Official Internship Documentation | Batch 119**
+<div align="center">
 
----
+# 🏭 Industrial IoT & Predictive Maintenance Analytics
+### *Driving Smart Manufacturing through Data Science & Machine Learning*
 
-## 📋 Document Control Information
-| **Attribute** | **Details** |
-| :--- | :--- |
-| **Project Title** | Industrial IoT & Predictive Maintenance Analytics |
-| **Domain** | Data Science & Smart Manufacturing (Industry 4.0) |
-| **Student Name** | **Viraj Uttam More** |
-| **Affiliation** | RMD Sinhgad Technical Institutes Campus, Warje, Pune |
-| **Submission To** | Savitribai Phule Pune University (SPPU) |
-| **Company** | TechnoHacks Solutions Pvt. Ltd. |
-| **Status** | ✅ Completed & Verified |
-
----
-
-## 1. Executive Summary
-This repository serves as the technical submission for the internship curriculum at **TechnoHacks Solutions Pvt. Ltd.** The project focuses on bridging the gap between **Mechanical Engineering** and **Data Science** by analyzing high-frequency telemetry data from CNC machines. The objective was to implement **Condition-Based Maintenance (CBM)** to predict spindle failures and optimize production quality.
-
----
-
-## 2. Industrial Profile (Company Details)
-The research and development were conducted under the mentorship of:
-
-* **Organization:** TechnoHacks Solutions Pvt. Ltd.
-* **Registration:** ISO 9001:2015 Certified & MSME Registered.
-* **CIN:** `U62099MH2024PTC424756`
-* **Headquarters:** Nashik, Maharashtra - 422005.
-
----
-
-## 3. Technical Methodology
-The project workflow follows standard Data Science pipelines tailored for Industrial IoT:
-
-* **Module 1: Data Sanitization:** Implemented median imputation strategies to handle missing sensor data without data loss.
-* **Module 2: Exploratory Analysis (EDA):** Identified a strong correlation (**0.87**) between Torque and Tool Wear using Heatmaps.
-* **Module 3: Statistical Thresholding:** Defined Upper/Lower Control Limits (UCL/LCL) for Spindle Temperature using IQR Z-Scores.
-* **Module 4: Predictive Modeling:** Developed a **Linear Regression Model** (Accuracy: 85%) to forecast thermal anomalies based on RPM and Load.
-* **Module 5: Root Cause Analysis:** Isolated specific pressure ranges contributing to manufacturing defects.
-
----
-
-## 4. Technology Stack
-* **Language:** Python 3.13.7
-* **Environment:** Visual Studio Code (VS Code) / Jupyter Notebook
-* **Libraries:** `pandas` (ETL), `numpy` (Math), `seaborn` (Visualization), `scikit-learn` (Modeling).
-
----
-
-## 5. How to Replicate (Setup Instructions)
-To verify the results locally:
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/virajmore/TechnoHacks-Internship.git](https://github.com/virajmore/TechnoHacks-Internship.git)
-    ```
-2.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  **Run Analysis:**
-    ```bash
-    jupyter notebook
-    ```
-
----
-
-## 📜 6. Author Declaration & Ownership
-**I, Viraj Uttam More, hereby declare that:**
-
-1.  The work presented in this repository is my original contribution completed during the **TechnoHacks Solutions Pvt. Ltd.** Internship (Batch 119).
-2.  The code and analysis are submitted for the partial fulfillment of the requirements for the **Third Year (T.E.) Mechanical Engineering** course at **SPPU**.
-3.  All sources of data and external libraries have been duly acknowledged.
+<img src="https://img.shields.io/badge/Python-3.13.7-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Role-Data%20Analyst-FF6F61?style=for-the-badge&logo=google-colab&logoColor=white" />
+<img src="https://img.shields.io/badge/Company-TechnoHacks-000000?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
 
 <br>
 
-| **Verified By** | **Student Details** |
-| :--- | :--- |
-| **Signature:** | *Viraj Uttam More* |
-| **Date:** | 2026 |
-| **Institute:** | RMD Sinhgad Technical Institutes Campus, Warje |
-| **Department:** | Mechanical Engineering |
+<p>
+<b>An industrial data analytics project analyzing CNC telemetry data to predict machinery failure,<br>optimize maintenance schedules, and reduce operational downtime.</b>
+</p>
 
-<div align="center">
-  <br>
-  <b>© 2026 Viraj Uttam More. All Rights Reserved.</b>
-  <br>
-  <i>Unauthorized copying of this repository's content is strictly prohibited.</i>
+<br>
+
+[**📂 View Modules**](#-project-architecture--analysis-modules) •
+[**📊 Model Results**](#-model-performance--key-insights) •
+[**⚙️ Installation**](#-how-to-replicate-setup) •
+[**📜 Ownership**](#-author-declaration--ownership)
+
 </div>
+
+---
+
+## 👨‍💻 Author & Academic Profile
+| **Parameter** | **Details** |
+| :--- | :--- |
+| **Analyst Name** | **Viraj Uttam More** |
+| **Institution** | **RMD Sinhgad Technical Institutes Campus, Warje, Pune** |
+| **Department** | Mechanical Engineering (T.E. 2019 Pattern) |
+| **University** | Savitribai Phule Pune University (SPPU) |
+| **Email** | virajmore5456@gmail.com |
+
+---
+
+## 🏢 Internship Context (Corporate Profile)
+> *Verified internship executed under the mentorship of a Ministry of Corporate Affairs (MCA) registered entity.*
+
+| **Attribute** | **Official Company Details** |
+| :--- | :--- |
+| **Organization** | **TechnoHacks Solutions Pvt. Ltd.** |
+| **Registration** | **ISO 9001:2015 Certified** & **MSME Registered** |
+| **CIN** | `U62099MH2024PTC424756` |
+| **Headquarters** | Nashik, Maharashtra - 422005 |
+| **Domain** | EdTech & Software Solutions |
+
+---
+
+## 🎯 Project Impact at a Glance
+Before diving into the code, here are the key analytical outcomes of this project:
+
+| **Metric** | **Result** | **Business Impact** |
+| :--- | :--- | :--- |
+| **Correlation** | **0.87 (High)** | Proved that *Torque* is the primary driver of *Tool Wear*. |
+| **Model Accuracy** | **85% (R²)** | Reliable prediction of Spindle Temperature spikes. |
+| **Data Quality** | **100% Cleaned** | Removed noise and imputed missing time-series values. |
+| **RCA Outcome** | **Pressure Isolated** | Identified specific pressure ranges causing defects. |
+
+---
+
+## 🔄 Project Architecture (Flowchart)
+The analysis follows the standard **CRISP-DM** (Cross-Industry Standard Process for Data Mining) methodology:
+
+```mermaid
+graph LR
+    A[💾 Raw Sensor Data] -->|Cleaning| B(🛠️ Preprocessing)
+    B -->|EDA| C{📊 Pattern Analysis}
+    C -->|Stats| D[📉 Thresholding]
+    D -->|ML| E[🤖 Predictive Model]
+    E -->|RCA| F[✅ Final Insight]
