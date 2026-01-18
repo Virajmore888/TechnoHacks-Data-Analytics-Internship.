@@ -1,71 +1,91 @@
-# Industrial IoT & Predictive Maintenance Analytics
-**Internship Project Report | Batch 119**
-
-![Python](https://img.shields.io/badge/Python-3.13.7-blue)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-
-## 1. Project Abstract
-This repository documents the Data Analytics and Machine Learning tasks completed during the internship at **TechnoHacks Solutions Pvt. Ltd.** The project aims to analyze industrial telemetry data from CNC machines to detect anomalies and predict spindle failure, bridging the gap between Mechanical Engineering domain knowledge and Data Science techniques.
+# 🏭 Industrial Data Analytics & Predictive Maintenance
+**Official Internship Documentation | Batch 119**
 
 ---
 
-## 2. Student & Academic Details
-| **Parameter** | **Details** |
+## 📋 Document Control Information
+| **Attribute** | **Details** |
 | :--- | :--- |
-| **Name of Student** | **Viraj Uttam More** |
-| **Course** | B.E. / B.Tech (Mechanical Engineering) |
-| **Current Year** | Third Year (T.E.) - 2019 Pattern |
-| **Institute** | **RMD Sinhgad Technical Institutes Campus, Warje, Pune** |
-| **University** | Savitribai Phule Pune University (SPPU) |
-| **Email** | virajmore5456@gmail.com |
+| **Project Title** | Industrial IoT & Predictive Maintenance Analytics |
+| **Domain** | Data Science & Smart Manufacturing (Industry 4.0) |
+| **Student Name** | **Viraj Uttam More** |
+| **Affiliation** | RMD Sinhgad Technical Institutes Campus, Warje, Pune |
+| **Submission To** | Savitribai Phule Pune University (SPPU) |
+| **Company** | TechnoHacks Solutions Pvt. Ltd. |
+| **Status** | ✅ Completed & Verified |
 
 ---
 
-## 3. Internship Company Profile
-The project was executed under the guidance of **TechnoHacks Solutions Pvt. Ltd.**, an ISO 9001:2015 certified and MSME registered company.
-
-- **Company Name:** TechnoHacks Solutions Pvt. Ltd.
-- **CIN:** `U62099MH2024PTC424756`
-- **Registration No:** 424756 (ROC-Mumbai)
-- **Address:** Gangapur Road, Nashik, Maharashtra - 422005.
+## 1. Executive Summary
+This repository serves as the technical submission for the internship curriculum at **TechnoHacks Solutions Pvt. Ltd.** The project focuses on bridging the gap between **Mechanical Engineering** and **Data Science** by analyzing high-frequency telemetry data from CNC machines. The objective was to implement **Condition-Based Maintenance (CBM)** to predict spindle failures and optimize production quality.
 
 ---
 
-## 4. Problem Statement
-To develop a predictive model capable of forecasting **Spindle Temperature** in a CNC machining environment to prevent overheating and tool breakage, thereby optimizing manufacturing quality and reducing downtime.
+## 2. Industrial Profile (Company Details)
+The research and development were conducted under the mentorship of:
+
+* **Organization:** TechnoHacks Solutions Pvt. Ltd.
+* **Registration:** ISO 9001:2015 Certified & MSME Registered.
+* **CIN:** `U62099MH2024PTC424756`
+* **Headquarters:** Nashik, Maharashtra - 422005.
 
 ---
 
-## 5. Methodology (Task Breakdown)
-The project was divided into 5 technical modules:
+## 3. Technical Methodology
+The project workflow follows standard Data Science pipelines tailored for Industrial IoT:
 
-### Module 1: Data Cleaning & Pre-processing
-- **Objective:** Handling noise in sensor data.
-- **Action:** Implemented `pandas` for median imputation of missing values and standardized timestamp formats for time-series consistency.
-
-### Module 2: Exploratory Data Analysis (EDA)
-- **Objective:** To find correlations between mechanical parameters.
-- **Observation:** A correlation coefficient of **0.87** was observed between **Torque** and **Tool Wear**. Visualized using Heatmaps and Box Plots.
-
-### Module 3: Statistical Analysis (Thresholding)
-- **Objective:** Defining safe operating limits.
-- **Action:** Calculated **Upper & Lower Control Limits (UCL/LCL)** using the IQR method to flag anomalies in temperature readings.
-
-### Module 4: Predictive Modeling
-- **Objective:** Forecasting machine behavior.
-- **Action:** Developed a **Linear Regression** model using `scikit-learn`.
-- **Performance:** The model achieved an **R² Score of 0.85**, effectively predicting thermal spikes based on Load and Speed.
-
-### Module 5: Root Cause Analysis (RCA)
-- **Objective:** Quality Control.
-- **Action:** Analyzed process parameters (Pressure, Speed) against binary failure targets to isolate causes of production defects.
+* **Module 1: Data Sanitization:** Implemented median imputation strategies to handle missing sensor data without data loss.
+* **Module 2: Exploratory Analysis (EDA):** Identified a strong correlation (**0.87**) between Torque and Tool Wear using Heatmaps.
+* **Module 3: Statistical Thresholding:** Defined Upper/Lower Control Limits (UCL/LCL) for Spindle Temperature using IQR Z-Scores.
+* **Module 4: Predictive Modeling:** Developed a **Linear Regression Model** (Accuracy: 85%) to forecast thermal anomalies based on RPM and Load.
+* **Module 5: Root Cause Analysis:** Isolated specific pressure ranges contributing to manufacturing defects.
 
 ---
 
-## 6. Process Flowchart
-```mermaid
-graph LR
-    A[Raw Data] --> B(Data Cleaning)
-    B --> C(EDA & Stats)
-    C --> D[Model Training]
-    D --> E[Predictions & RCA]
+## 4. Technology Stack
+* **Language:** Python 3.13.7
+* **Environment:** Visual Studio Code (VS Code) / Jupyter Notebook
+* **Libraries:** `pandas` (ETL), `numpy` (Math), `seaborn` (Visualization), `scikit-learn` (Modeling).
+
+---
+
+## 5. How to Replicate (Setup Instructions)
+To verify the results locally:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/virajmore/TechnoHacks-Internship.git](https://github.com/virajmore/TechnoHacks-Internship.git)
+    ```
+2.  **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Run Analysis:**
+    ```bash
+    jupyter notebook
+    ```
+
+---
+
+## 📜 6. Author Declaration & Ownership
+**I, Viraj Uttam More, hereby declare that:**
+
+1.  The work presented in this repository is my original contribution completed during the **TechnoHacks Solutions Pvt. Ltd.** Internship (Batch 119).
+2.  The code and analysis are submitted for the partial fulfillment of the requirements for the **Third Year (T.E.) Mechanical Engineering** course at **SPPU**.
+3.  All sources of data and external libraries have been duly acknowledged.
+
+<br>
+
+| **Verified By** | **Student Details** |
+| :--- | :--- |
+| **Signature:** | *Viraj Uttam More* |
+| **Date:** | 2026 |
+| **Institute:** | RMD Sinhgad Technical Institutes Campus, Warje |
+| **Department:** | Mechanical Engineering |
+
+<div align="center">
+  <br>
+  <b>© 2026 Viraj Uttam More. All Rights Reserved.</b>
+  <br>
+  <i>Unauthorized copying of this repository's content is strictly prohibited.</i>
+</div>
