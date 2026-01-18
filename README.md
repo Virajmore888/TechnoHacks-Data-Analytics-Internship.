@@ -6,7 +6,7 @@
 
 <img src="https://img.shields.io/badge/Python-3.13.7-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Role-Data%20Analyst-FF6F61?style=for-the-badge&logo=google-colab&logoColor=white" />
-<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Algorithm-Linear%20Regression-success?style=for-the-badge" />
 
 <br>
 
@@ -30,65 +30,59 @@
 
 ---
 
-## 🏢 Internship Context
-> *Verified internship executed under the mentorship of a Ministry of Corporate Affairs (MCA) registered entity.*
-
-| **Attribute** | **Official Company Details** |
-| :--- | :--- |
-| **Organization** | **TechnoHacks Solutions Pvt. Ltd.** |
-| **Registration** | **ISO 9001:2015 Certified** & **MSME Registered** |
-| **CIN** | `U62099MH2024PTC424756` |
-| **Headquarters** | Nashik, Maharashtra - 422005 |
-
----
-
-## 🎯 Project Impact at a Glance
-Before diving into the code, here are the key analytical outcomes:
+## 🎯 Project Impact & Key Findings
+Based on the analysis of the CNC telemetry data, here are the actual results derived from the code:
 
 | **Metric** | **Result** | **Business Impact** |
 | :--- | :--- | :--- |
-| **Correlation** | **0.87 (High)** | Proved that *Torque* is the primary driver of *Tool Wear*. |
-| **Model Accuracy** | **85% (R²)** | Reliable prediction of Spindle Temperature spikes. |
-| **Data Quality** | **100% Cleaned** | Removed noise and imputed missing time-series values. |
-| **RCA Outcome** | **Pressure Isolated** | Identified specific pressure ranges causing defects. |
+| **Correlation** | **Positive Trend** | Higher RPM and Operation Time directly increase *Vibration*. |
+| **Model Prediction** | **High Risk @ 1250 RPM** | Predicted Temp spike (>50°C) at high speeds, signaling overload. |
+| **Data Quality** | **Outliers Fixed** | Corrected sensor glitches (850°C spikes) using Median Imputation. |
+| **Root Cause (RCA)** | **Cooling Failure** | **Temperature** (not Pressure) was identified as the main cause of batch failures. |
 
 ---
 
 <a name="-project-tasks--analysis"></a>
 ## 📂 Project Tasks & Analysis
-*Detailed breakdown of the 5 Tasks completed during the internship:*
+*Detailed breakdown of the 5 Tasks completed using Python:*
 
 ### ✅ Task 1: Data Sanitization (Cleaning)
-* **Objective:** Handle noisy sensor data and missing values.
-* **Solution:** Applied **Median Imputation** to preserve data distribution without dropping rows, ensuring 100% data consistency for time-series analysis.
+* **Code Logic:** Handling sensor errors where Temperature spiked to unrealistic values (e.g., 850°C).
+* **Action:**
+  * Removed duplicate timestamp entries.
+  * **Imputation:** Used `median()` for temperature outliers and `mean()` for missing RPM values.
+  * **Feature Engineering:** Created a `Status` column to flag vibrations > 0.17 mm/s as "Maintenance Required".
 
 ### ✅ Task 2: Exploratory Data Analysis (EDA)
-* **Objective:** Find relationships between mechanical parameters.
-* **Key Finding:** A strong linear relationship (**r = 0.87**) exists between Torque and Tool Wear.
-* **Visuals Used:** Heatmaps & Distribution Plots.
+* **Code Logic:** Dual-axis visualization using `matplotlib`.
+* **Visuals:** Plotted **Temperature (Left Axis)** vs. **Vibration (Right Axis)** over time.
+* **Finding:** Observed a synchronized increase in temperature and vibration, confirming mechanical stress accumulation.
 
 ### ✅ Task 3: Statistical Process Control (SPC)
-* **Objective:** Detect anomalies in machine temperature.
-* **Outcome:** Calculated **Upper & Lower Control Limits (UCL/LCL)** using Z-Scores and IQR to flag overheating risks in real-time.
+* **Code Logic:** Threshold detection using Standard Deviation.
+* **Formula:** `Limit = Mean + (1.5 * Std_Dev)`.
+* **Outcome:** Categorized machine health into three zones: **Safe**, **Caution**, and **Critical**.
+* **Alerts:** Successfully flagged specific timestamps where vibration exceeded the safety threshold.
 
-### ✅ Task 4: Predictive Modeling (Machine Learning)
-* **Objective:** Forecast Spindle Failure.
-* **Algorithm:** **Linear Regression** (Scikit-Learn).
-* **Performance:** Achieved an **MAE (Mean Absolute Error) of 2.4K**, making the model suitable for industrial monitoring.
+### ✅ Task 4: Predictive Analytics (ML)
+* **Code Logic:** Training a **Linear Regression** model on RPM vs. Temperature.
+* **Prediction:** The model predicted the Spindle Temperature for a hypothetical high-speed operation (**1250 RPM**).
+* **Assessment:** The system automatically flags "HIGH RISK - Overload" if the predicted temperature exceeds **50°C**.
 
 ### ✅ Task 5: Root Cause Analysis (RCA)
-* **Objective:** Investigate Manufacturing Defects.
-* **Result:** Isolated specific high-pressure zones responsible for 60% of product defects by comparing "Failure" vs. "No Failure" states.
+* **Code Logic:** A/B Testing of "Failed" vs. "Passed" batches.
+* **Comparison:** Calculated mean Temperature and Pressure for both groups.
+* **Conclusion:** The algorithm detected that **Average Temperature in Failed Batches (~26°C)** was significantly higher than in Passed Batches (~21°C), recommending a reduction in Cooling Temp.
 
 ---
 
 <a name="-model-performance--key-insights"></a>
-## 📈 Model Performance & Key Insights
-To validate the accuracy of the model, standard metrics were calculated:
+## 📈 Technical Implementation Details
+The project utilizes a robust Python stack for analysis:
 
-* **R² Score:** 0.85 (High reliability)
-* **MAE:** 2.4 Kelvin (Low error margin)
-* **RMSE:** 3.1 Kelvin
+* **Linear Regression:** Used to calculate Slope and Intercept for thermal forecasting.
+* **Pandas GroupBy:** Used in Task 5 to isolate failure patterns.
+* **Twin-Axis Plotting:** Used in Task 2 to correlate two different physical units (Celsius & mm/s).
 
 ---
 
@@ -97,8 +91,8 @@ To validate the accuracy of the model, standard metrics were calculated:
   <img src="https://img.shields.io/badge/Language-Python%203.13-blue?logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Library-Pandas-150458?logo=pandas&logoColor=white">
   <img src="https://img.shields.io/badge/Library-NumPy-013243?logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/Library-Matplotlib-ffffff?logo=matplotlib&logoColor=black">
   <img src="https://img.shields.io/badge/Library-Scikit_Learn-F7931E?logo=scikit-learn&logoColor=white">
-  <img src="https://img.shields.io/badge/Tool-VS%20Code-007ACC?logo=visual-studio-code&logoColor=white">
 </div>
 
 ---
@@ -117,7 +111,7 @@ To run this analysis on your local machine:
     pip install -r requirements.txt
     ```
 
-3.  **Launch Notebook**
+3.  **Run Analysis**
     ```bash
     jupyter notebook
     ```
